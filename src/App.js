@@ -6,7 +6,10 @@ const App = () => (
   <div>
     <p>Read the README.md to see the tasks</p>
     <MyComponent title="It works"/>
-    <Wrapper><Title title="Test" /></Wrapper><Title></Title>
+    <Wrapper>
+      <Title title="Test" />
+      <p>Paragraph</p>
+    </Wrapper>
   </div>
 );
 
