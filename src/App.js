@@ -9,6 +9,7 @@ import { useState } from "react";
 const App = () => {
   const food = ['Pizza', 'Hamburger', 'Coke'];
   const [inputValue, setInputValue] = useState("")
+  const [isClicked, setIsClicked] = useState(false)
 
   return (
     <div>
@@ -19,8 +20,8 @@ const App = () => {
         <p>Paragraph</p>
       </Wrapper>
       <Food foods={food} />
-      <Alert setInput={setInputValue} inputValue={inputValue}/>
-      <p>{inputValue}</p>
+      <Alert setInput={setInputValue} inputValue={inputValue} setIsClicked={setIsClicked} isClicked={isClicked}/>
+      <p>{isClicked && inputValue}</p>
     </div>)
 };
 

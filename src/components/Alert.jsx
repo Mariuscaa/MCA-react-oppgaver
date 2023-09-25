@@ -1,6 +1,7 @@
-export default function Alert({setInput, inputValue}) {
+export default function Alert({setInput, inputValue, setIsClicked, isClicked}) {
   const handleButtonClick = () => {
-    console.log('Clicked');
+    console.log(inputValue);
+    setIsClicked(!isClicked)
     alert(inputValue);
   };
 
